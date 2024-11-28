@@ -32,7 +32,10 @@
     "eslint": "^9.13.0",
     "eslint-config-next": "^15.0.2",
     "postcss": "^8.4.49",
+    "prettier": "^3.4.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "slice-machine-ui": "^2.10.4",
     "tailwindcss": "^3.4.15"
-  }
+  },
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
