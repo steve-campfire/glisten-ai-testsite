@@ -2,6 +2,8 @@ import "./globals.css";
 import { DM_Sans } from 'next/font/google'
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
+import Header from "@/components/headers";
+import Footer from "@/components/footer";
 
 
 const dmSans = DM_Sans({
@@ -21,8 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={dmSans.variable}>
-      <body>{
-          children}
+      <body className="bg-[#070815] text-white">
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
